@@ -1,0 +1,33 @@
+@keyframes  cambioderadio {
+
+    0%{border-radius: 0px;}
+    50%{border-radius: 20px;}
+    100%{border-radius: 50px;}
+}
+
+
+@keyframes cambiodeancho {
+
+    0%{width: 200px;}
+    40%{width: 300px;}
+    70%{width: 400px;}
+    100%{width: 500px;}
+}
+
+@keyframes cambiocolor {
+    0%{background-color: red;}
+    50%{background-color: yellow;}
+    100%{background-color: blue;}
+}
+
+#cuadrado {
+    width: 250px;
+    height: 250px;
+    background: #000;
+    animation-name: cambiocolor;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-direction: normal;
+}
+

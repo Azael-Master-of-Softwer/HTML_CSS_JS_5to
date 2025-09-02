@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMACION</title>
+
+<style>
+
+@keyframes cambiocolor {
+    0%{background-color: red;}
+    50%{background-color: yellow;}
+    100%{background-color: blue;}
+}
+
+#cuadrado {
+    width: 250px;
+    height: 250px;
+    background: #000;
+    animation-name: cambiocolor;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-direction: normal;
+}
+</style> 
+
+</head>
+<body>
+    
+<div id="cuadrado"></div>
+
+
+</body>
+</html>
