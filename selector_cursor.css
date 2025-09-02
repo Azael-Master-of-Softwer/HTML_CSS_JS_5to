@@ -1,0 +1,26 @@
+a:hover.sobre {
+    color:#fff;
+    background-color: blue;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid green;
+    font-family: impact;
+}
+
+a.sin {text-decoration: none;}
+
+a.otro {
+    background-color: green;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+
+}
+
+
+#titulo{
+
+font-size: 77px;
+text-shadow: 50px 45px 32px red;
+
+}

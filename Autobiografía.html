@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autobiografía de Azael Caim Cárdenas Contreras</title>
+  <style>
+    :root{
+      --bg:#0a0014;        /* negro/morado oscuro */
+      --card:#1a0225;
+      --text:#e5e7eb;
+      --accent:#9b5de5;    /* morado principal */
+      --muted:#a78bfa;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(120deg,var(--bg),#2d0a42);color:var(--text)}
+    header{padding:32px 16px;text-align:center}
+    header h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)}
+    header p{margin:0;color:var(--muted)}
+    main{max-width:980px;margin:auto;padding:16px;display:grid;gap:16px}
+    section{background:var(--card);border:1px solid #2e1065;border-radius:16px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    h2{margin-top:0;font-size:clamp(20px,3vw,28px);color:var(--accent)}
+    .row{display:grid;gap:16px;grid-template-columns:1fr;}
+    @media(min-width:800px){.row{grid-template-columns:1.2fr .8fr}}
+    .avatar{width:220px;height:220px;border-radius:20px;object-fit:cover;border:3px solid var(--accent)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#2d0a42;border:1px solid #3b0764;padding:6px 10px;border-radius:999px;font-size:14px}
+    a{color:var(--accent)}
+    .center{text-align:center}
+    .callout{background:#2d0a42;border:1px dashed #4c1d95;padding:12px;border-radius:12px}
+    footer{padding:24px;text-align:center;color:var(--muted)}
+    .demo p{margin:6px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i>Hola, soy Azael Caim Cárdenas Contreras (AZA)</i></h1>
+    <p>Apoco si mushasho</p>
+  </header>
+
+  <main>
+    <section class="row">
+      <div>
+        <h2>Sobre mí</h2>
+        <p><strong>Nací:</strong> 6 de enero del 2006 en Sabinas Hidalgo, Nuevo León.</p>
+        <p>Hola mi nombre es Azael como ya lo mencione, soy una persona relaja y de buen carácter con los demás asi no te procupes de detalles o cosas aqui estamos para lo que se necesite.</p>
+        <div class="chips" aria-label="etiquetas">
+          <span class="chip">Estudiante de LTI en Facpya</span>
+          <span class="chip">📍 Sabinas Hidalgo, NL</span>
+          <span class="chip">Anime, Box, Piano, Freestyle</span>
+        </div>
+      </div>
+      <aside class="center">
+        <img class="avatar" src="i love paris.jpeg" alt="Foto de Azael" />
+        <p class="callout"><b>Contacto:</b> <a href="mailto:azaelcardenascontreras@gmail.com">azaelcardenascontreras@gmail.com</a></p>
+      </aside>
+    </section>
+
+    <section>
+      <h2>Estudios y metas</h2>
+      <ul>
+        <li><b>Estudios actuales:</b> Carrera de LTI en 5to semestre</li>
+        <li><b>Logros/Reconocimientos:</b> En proceso de formación académica</li>
+        <li><b>Metas a corto plazo:</b> Seguir estudiando y buscar algún trabajo relacionado</li>
+        <li><b>Metas a largo plazo:</b> Terminar mis estudios y tener un buen trabajo, aunque sea fuera de mi área</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Hobbies y gustos</h2>
+      <p>Cuando no estudio, me gusta <em>ver anime, practicar box, tocar instrumentos como el piano y el freestyle</em>. Estos son algunos favoritos:</p>
+      <div class="row">
+        <div>
+          <p><u>Juegos favoritos</u></p>
+          <ul>
+            <li>L4D2</li>
+            <li>Terraria</li>
+            <li>Minecraft</li>
+          </ul>
+        </div>
+        <div>
+          <p><u>Top 3 música/artistas</u></p>
+          <ol>
+            <li>De todo un poco</li>
+            <li>—</li>
+            <li>—</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links y proyectos</h2>
+      <p>Mira más de mí en estos enlaces:</p>
+      <ul>
+        <li><a href="https://www.youtube.com/@XulcanYT" target="_blank" rel="noopener">Mi canal de YouTube</a></li>
+        <li><a href="#" target="_blank" rel="noopener">(Espacio para futuros proyectos)</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Galería</h2>
+      <p class="muted">Algunas imágenes que me representan:</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <img src="i love paris.jpeg" alt="Foto en París" width="240" height="240">
+        <img src="https://i.pinimg.com/474x/74/bb/34/74bb340ffe87e31837a04a538f1bbc10.jpg" alt="Paisaje" width="240" height="240">
+      </div>
+    </section>
+
+    <section class="demo">
+      <p class="callout"><big>Frase favorita:</big> “Si estas triste lee esto. Ahorita no cuando estés triste.”</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="anio"></span> Azael Caim Cárdenas Contreras — Hecho con ♥ en Sabinas Hidalgo, NL. 
+      </p>
+  </footer>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

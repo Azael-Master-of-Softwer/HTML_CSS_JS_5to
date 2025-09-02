@@ -1,0 +1,46 @@
+body{
+    background-color: lightblue;
+}
+
+h1  {
+    color: navy;
+    margin-left: 20px;
+}
+
+#texto1 {
+    font-size: 20px
+}
+
+.texto1 {
+    font-size: 20px
+}
+
+h2{
+	   font-family: times new roman;
+	   font-size: 30px;
+	   font-style: italic;
+	   font-weight: bold;
+	}
+
+.tituloprincipal{
+    border:5px solid #ff0000;
+}
+
+.comentarios{
+
+    border-top: solid #ff0000;
+    border-left: solid blue;
+    border-bottom:3px solid #ffff00;
+    border-right: solid green;
+}
+
+.conpadding{
+
+    background-color: #dddddd;
+    padding: 50px 100px;
+}
+
+.conmargenes{
+    background-color: #dddddd;
+		  margin: 70px 20px;		
+}

@@ -1,0 +1,55 @@
+* {
+margin: 30;
+padding: 20;
+color: #ff0000;
+}
+
+
+ul.circulo {
+
+    list-style-type : circle;
+}
+
+ul.cuadrado {
+
+    list-style-type : square;
+}
+
+ol.latin {
+
+    list-style-type : lower-latin;
+}
+
+ol.romano {
+
+    list-style-type : upper-roman;
+}
+
+ul.imagen {
+
+    list-style-image : url('fotosintesis.jpg');
+    list-style-position: inside;
+}
+
+
+ul.dentro {
+
+    list-style-position: inside;
+}
+
+ul.fuera {
+
+    list-style-position: outside;
+}
+
+ul.separado {
+
+    list-style-type : none;
+    list-style-position: inside;
+    list-style-image: url('Fotito.jpeg');
+}
+
+
+ul.junto {
+    list-style: none inside url('i\ love\ paris.jpeg');
+}
