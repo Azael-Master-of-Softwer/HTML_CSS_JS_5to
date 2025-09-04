@@ -25,9 +25,9 @@
     height: 250px;
     background: #000;
     animation-name: cambiocolor;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-timing-function: ease-in;
-    animation-delay: 3s;
+    animation-delay: 0s;
     animation-direction: normal;
 }
 
