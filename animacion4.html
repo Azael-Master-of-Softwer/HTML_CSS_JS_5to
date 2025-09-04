@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMACION</title>
+
+<style>
+
+@keyframes  cambiodecolorytamano {
+
+    0%{
+    width: 10px;
+    height: 10px;
+    background-color: #1f99ff;
+    }
+    20%{
+    width: 60px;
+    height: 60px;
+    background-color: #f2753f;    
+    }
+    40%{
+    width: 120px;
+    height: 120px;
+    background-color: #27e60c;
+    }
+    60%{
+    width: 180px;
+    height: 180px;
+    background-color: #f2753f;
+    }
+    80%{
+    width: 240px;
+    height: 240px;
+    background-color: #27e60c;
+    }
+    100%{
+    width: 300px;
+    height: 300px;
+    background-color: #27e60c;
+    }
+}
+
+#combo {
+    width: 200px;
+    height: 200px;
+    background: #ff8e24;
+    animation-name: cambiodecolorytamano;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+</style> 
+
+</head>
+<body>
+    
+<div id="combo"></div>
+
+
+</body>
+</html>

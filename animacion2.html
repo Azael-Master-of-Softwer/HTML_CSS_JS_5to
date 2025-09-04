@@ -7,18 +7,20 @@
 
 <style>
 
-@keyframes cambiocolor {
-    0%{background-color: red;}
-    50%{background-color: yellow;}
-    100%{background-color: blue;}
+@keyframes cambiodeancho {
+
+    0%{width: 200px;}
+    40%{width: 300px;}
+    70%{width: 400px;}
+    100%{width: 500px;}
 }
 
-#cuadrado {
-    width: 1200x;
-    height: 594px;
-    background: #000;
-    animation-name: cambiocolor;
-    animation-duration: 2s;
+#cubito {
+    width: 100px;
+    height: 100px;
+    background: #ff8e24;
+    animation-name: cambiodeancho;
+    animation-duration: 10s;
     animation-timing-function: ease-in;
     animation-delay: 3s;
     animation-iteration-count: infinite;
@@ -29,7 +31,7 @@
 </head>
 <body>
     
-<div id="cuadrado"></div>
+<div id="cubito"></div>
 
 
 </body>
