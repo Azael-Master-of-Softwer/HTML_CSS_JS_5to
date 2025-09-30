@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BOTON PARA HACER CAMBIAR EL  PARRAFO E INSERTAR SCRPITS DENTRO DE HTML</title>
+    <script>
+        function myfunction() {
+            document.getElementById("demo").innerHTML = "ADIOS MUNDO";
+        }
+    </script>
+</head>
+<body>
+    <h1>Mi primera pagina web</h1>
+    <p id="demo">HOLA MUNDO</p>
+
+    <button type="button" onclick="myfunction()">
+        Haz click aqui para cambiar el texto
+    </button>
+
+</body>
+</html>
+
+<!-- El script se puede poner en el head o en el body, pero es mejor ponerlo en el head para que el codigo este mas organizado. -->
