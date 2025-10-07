@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML USANDO CONST</title>
+</head>
+<body>
+    <h1>Mi primera pagina web</h1>
+    <p>Usando variables mi pai</p>
+    <br>
+
+        <p id="demo"></p>
+
+    <script>
+
+        const cars = ["Saab", "Volvo", "BMW"];
+        cars[0] = "Toyota";
+        cars.push("Audi");
+        document.getElementById("demo").innerHTML = cars;
+
+    </script>
+    <br>
+
+        <p id="papu"></p>
+
+    <script>
+
+        const car = {type:"Fiat", model:"500", color:"white"};
+        car.color = "red";
+        car.owner = "Pedrito";
+        document.getElementById("papu").innerHTML = "El dueño de carro es " + car.owner;
+
+    </script>
+    <br>
+    <p id="que"></p>
+
+    <script>
+
+        const x = 10;
+
+        {
+            const x = 2;
+        }
+
+        document.getElementById("que").innerHTML = "x es igual a spicy por "+ x;
+
+    </script>
+
+</body>
+</html>
