@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("El nombre debe ser llenado");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Validaciin Fomularios</h1>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Enviar">
+</form>
+
+<br>
+<p>Porfavor ingresa un numero entre 1 y 10:</p>
+
+<input id="num">
+<button type="button" onclick="myFunction()">Enviar</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("num").value;
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Numero ingresado no correcto";
+  } else {
+    text = "Numero ingresado correcto";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<form action="/action_page.php" method="post">
+  <input type="text" name="fname" required>
+  <input type="submit" value="Enviar">
+</form>
+
+<p>Si le das a Enviar te saldra un error en tu navegador</p>
+
+</body>
+</html>

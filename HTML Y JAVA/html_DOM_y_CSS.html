@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Y CSS</title>
+
+
+</head>
+<body>
+
+<h2>JavaScript, HTML y DOM</h2>
+<p>Cambiando el Estilo:</p>
+
+
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+document.getElementById("p2").style.fontFamily = "Arial";
+document.getElementById("p2").style.fontSize = "larger";
+</script>
+
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'red'">
+Haz Click!</button>
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'black'">
+Haz Click!</button>
+    
+
+<p id="p5">
+Esto es texto
+esto es texto
+Esto es texto
+</p>
+
+<input type="button" value="Ocultar texto" onclick="document.getElementById('p5').style.visibility='hidden'">
+<input type="button" value="Mostrar texto" onclick="document.getElementById('p5').style.visibility='visible'">
+
+
+</body>
+</html>

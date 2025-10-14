@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTILIZANDO DOM</title>
+</head>
+
+<body>
+<p>
+    El DOM (Document Object Model) es una interfaz de programación para documentos HTML y XML. Proporciona una representación estructurada del documento como un árbol de objetos, lo que permite a los lenguajes de programación manipular el contenido, la estructura y el estilo del documento de manera dinámica.
+
+    para que se pueda ustilizar el DOM en HTML, se debe poner un id en la etiqueta que se quiere modificar, y luego se utiliza el metodo getElementById("id") para seleccionar el elemento y luego se puede modificar su contenido con innerHTML o su estilo con style.
+</p>
+
+<br><br><br>
+
+<p id="intro">Encontrar HTML por ID mi pai</p>
+
+<p id="demo"></p>
+
+<script>
+
+    const element = document.getElementById("intro")
+
+    document.getElementById("demo").innerHTML = "El texto del primer parrafo es: " + element.innerHTML;
+
+</script>
+
+<br><br><br>
+
+<p>Encuentra esto perra</p>
+<p>No me encuentres</p>
+
+<p id="busco"></p>
+
+<script>
+    const elemento = document.getElementsByTagName("p");
+
+    document.getElementById("busco").innerHTML = "El texto del segundo parrafo es: " + elemento[3].innerHTML;
+
+</script>
+
+
+<br>
+ <p>
+ ejemplos:
+ </p>
+
+    <h1>Mi primera pagina web</h1>
+        <p id="boton">HOLA MUNDO</p>
+    
+        <button type="button" onclick="document.getElementById('boton').innerHTML = 'ADIOS MUNDO'">
+            Haz click aqui para cambiar el texto
+        </button>
+<br><br>
+        <button type="button" onclick="document.getElementById('boton').style.fontSize = '35px'">
+            Haz click aqui para agrandar el texto
+        </button>
+<br><br>
+        <button type="button" onclick="document.getElementById('boton').style.color = 'red'">
+            Haz click aqui para cambiar el color del texto
+        </button>
+<br><br>
+        <button type="button" onclick="document.getElementById('boton').innerHTML = 'HOLA MUNDO'; document.getElementById('boton').style.fontSize = '16px'; document.getElementById('boton').style.color = 'black'">
+            Haz click aqui para restaurar el texto
+        </button>
+<br><br>
+
+<p id="fecha"></p>
+
+<script>
+    document.getElementById("fecha").innerHTML = Date();
+</script>
+
+</body>
+</html>

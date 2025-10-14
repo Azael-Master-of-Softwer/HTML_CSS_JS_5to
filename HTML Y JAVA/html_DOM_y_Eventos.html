@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DOM Y EVENTOS</title>
+</head>
+
+<body>
+
+<h1>JavaScript, HTML y Eventos</h1>
+<h2>El Atributo de Click</h2>
+
+<h2 onclick="this.innerHTML='Espaicy!'">Haz Click en este Texto!</h2>
+
+
+<h2 onclick="changeText(this)">Haz Click en este otro Texto!</h2>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Le toca hacer Filtrado!";
+}
+</script>
+
+<p>Haz Click en el siguiente boton para mostrar la fecha.</p>
+<button onclick="displayDate()">La Fecha es?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+Ingresa tu Nombre: <input type="text" id="fname" oninput="upperCase()">
+<p>Cuando escribes tu nombre automaticamente se pone en Mayusculas.</p>
+
+<script>
+function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Ponte encima</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Sacate alv"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Ponte encima"
+}
+</script>
+<br><br>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Haz Click</div>
+
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Le voy a tocar en su parte mas intima";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="No me toques ahi";
+}
+</script>
+
+</body>
+</html>
