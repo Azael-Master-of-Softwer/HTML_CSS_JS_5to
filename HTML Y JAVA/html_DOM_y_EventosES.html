@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Y EVENTOS ESCUCHA</title>
+
+    <style>
+#myDiv1, #myDiv2 {
+  background-color: rgb(80, 255, 214);
+  padding: 50px;
+}
+
+#myP1, #myP2 {
+  background-color: white; 
+  font-size: 20px;
+  border: 1px solid;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+    <h2>JavaScript addEventListener()</h2>
+
+
+<button id="myBtn">CLICK</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("ESPICY");
+});
+</script>
+<br><br>
+
+<h2>JavaScript addEventListener() con funcion externa</h2>
+<button id="myBotn">CLICK</button>
+
+<script>
+document.getElementById("myBotn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("ESPICY x2!");
+}
+</script>
+
+
+<br><br>
+<h2>JavaScript addEventListener() con multiples funciones</h2>
+<button id="myBoton">CLICK</button>
+
+
+<script>
+var x = document.getElementById("myBoton");
+x.addEventListener("click", myFunctione);
+x.addEventListener("click", someOtherFunction);
+
+function myFunctione() {
+  alert ("HOLIIII!");
+}
+
+function someOtherFunction() {
+  alert ("ME PICA EL ANO!");
+}
+</script>
+<br><br>
+<h2>JavaScript addEventListener() con multiples eventos</h2>
+
+<button id="myBotone">CLICK</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("myBotone");
+x.addEventListener("mouseover", myFunctionee);
+x.addEventListener("click", mySecondFunctione);
+x.addEventListener("mouseout", myThirdFunctione);
+
+function myFunctionee() {
+  document.getElementById("demo").innerHTML += "QUITATE MRD!<br>";
+}
+
+function mySecondFunctione() {
+  document.getElementById("demo").innerHTML += "SE HIZO CLICK!<br>";
+}
+
+function myThirdFunctione() {
+  document.getElementById("demo").innerHTML += "AL MENOS HICISTE ALGO BIEN!<br>";
+}
+</script>
+<br><br>
+<h2>JavaScript addEventListener() con evento de ventana</h2>
+<p id="demos"></p>
+
+<script>
+window.addEventListener("resize", function(){
+  document.getElementById("demos").innerHTML = Math.random();
+});
+</script>
+<br><br>
+
+<h2>JavaScript addEventListener() con parametros</h2>
+<button id="miBtn">CLICK</button>
+
+<p id="demoi"></p>
+
+<script>
+let p1 = 5;
+let p2 = 7;
+document.getElementById("miBtn").addEventListener("click", function() {
+  myFunction(p1, p2);
+});
+
+function myFunction(a, b) {
+  document.getElementById("demoi").innerHTML = a * b;
+}
+</script>
+
+
+<br><br><h2>JavaScript addEventListener() con propagacion y captura de eventos</h2>
+<div id="myDiv1">
+  <h2>PROPAGANDO:</h2>
+  <p id="myP1">HAZ CLICK!</p>
+</div><br>
+
+<div id="myDiv2">
+  <h2>CAPTURANDO:</h2>
+  <p id="myP2">HAZ CLICK!</p>
+</div>
+
+<script>
+document.getElementById("myP1").addEventListener("click", function() {
+  alert("HICISTE CLICK EN EL CUADRO BLANCO!");
+}, false);
+
+document.getElementById("myDiv1").addEventListener("click", function() {
+  alert("HICISTE CLICK EN EL CUADRO NARANJA!");
+}, false);
+
+document.getElementById("myP2").addEventListener("click", function() {
+  alert("HICISTE CLICK EN EL CUADRO BLANCO!");
+}, true);
+
+document.getElementById("myDiv2").addEventListener("click", function() {
+  alert("HICISTE CLICK EN EL CUADRO NARANJA!");
+}, true);
+</script>
+
+</body>
+</html>
