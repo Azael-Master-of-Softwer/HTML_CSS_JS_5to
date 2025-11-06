@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobiografía de Azael</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Autobiografía de Azael</h1>
+        <p>Licenciatura en Tecnologías de la Información - FACPYA UANL</p>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Hola, mi nombre es <b>Azael Caim Cárdenas Contreras</b>. Tengo 19 años y actualmente estudio la 
+                carrera de <b>Licenciatura en Tecnologías de la Información</b> en la <b>FACPYA</b> de la UANL.
+            </p>
+            <p>
+                Desde pequeño me ha interesado la tecnología, los videojuegos y la música. Me considero una persona 
+                creativa, curiosa y con muchas ganas de aprender cosas nuevas.
+            </p>
+        </section>
+
+        <section id="facultad">
+            <h2>Mi Facultad</h2>
+            <p>Actualmente estudio en la Facultad de Contaduría Pública y Administración (FACPYA) de la UANL, ubicada en Sabinas Hidalgo, N.L.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.608263663548!2d-100.17529012535304!3d26.51297277687733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8664d9865f9e401f%3A0xa0324e7e558b427!2sFACPYA%20UANL%20Sabinas%20Hidalgo!5e0!3m2!1ses!2smx!4v1730825630919!5m2!1ses!2smx" 
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies e intereses</h2>
+            <ul>
+                <li>🎮 Jugar videojuegos (L4D2, Rocket League, Terraria)</li>
+                <li>🎧 Escuchar música y practicar freestyle</li>
+                <li>💻 Aprender programación y desarrollo web</li>
+                <li>🥊 Ver box y practicar deportes</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <form id="formulario">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu nombre">
+                <label>Email:</label>
+                <input type="email" id="correo" placeholder="Tu correo electrónico">
+                <label>Mensaje:</label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+                <button type="button" onclick="enviarFormulario()">Enviar</button>
+                <button type="button" onclick="borrarCampos()">Borrar</button>
+            </form>
+        </section>
+
+        <section id="interactivo">
+            <h2>Zona interactiva (JavaScript)</h2>
+            <p>Presiona el botón para encender o apagar la luz 💡</p>
+            <img id="foco" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Foco">
+            <br>
+            <button onclick="toggleFoco()">Encender / Apagar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Autobiografía de Azael</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
